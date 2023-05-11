@@ -1,15 +1,3 @@
-// let titulo = document.querySelector('.digitando');
-
-// function ativaLetreiro(elemento){
-//     let arrTexto = elemento.innerHTML.split('');
-//     elemento.innerHTML = '';
-//     arrTexto.forEach((Letra, i)=>{
-//         setTimeout(()=>{
-//             elemento.innerHTML += Letra;
-//         }, 120 * i)
-//     });
-// }
-// ativaLetreiro(titulo);
 let titulo = document.querySelector('.digitando');
 
 function ativaLetreiro(elemento) {
@@ -28,3 +16,9 @@ function loopLetreiro() {
 }
 
 loopLetreiro();
+
+let ativaMenu = document.querySelector('.fa-bars');
+
+ativaMenu.addEventListener('click', ()=>{
+  ativaMenu.classList.toggle('fa-x')
+})
